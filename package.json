@@ -1,0 +1,46 @@
+{
+  "name": "vscode_ex_prac",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onView:flatEarth"
+  ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "flatEarth",
+          "name": "Flat Earth"
+        }
+      ]
+    }
+  },
+  "engines": {
+    "vscode": "^1.42.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T0nixx/vscode_ex_prac.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T0nixx/vscode_ex_prac/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.21",
+    "@types/vscode": "^1.42.0",
+    "typescript": "^3.5.1",
+    "tslint": "^5.12.1"
+  },
+  "homepage": "https://github.com/T0nixx/vscode_ex_prac#readme",
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
